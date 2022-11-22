@@ -1,0 +1,49 @@
+
+<div class="container mt-5 mb-5">
+  <div class="col-lg-6 col-lg-12">
+    <h1>Welcome to Formulaire</h1>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <input
+        id="name"
+        name="name"
+        class="form-control"
+        type="text"
+        placeholder="Nom de l'appareil"
+        aria-label="default input example"
+        ngModel
+      />
+      <div class="selt">
+        <select
+          id="status"
+          name="status"
+          class="form-select"
+          aria-label="Default select example"
+          ngModel
+        >
+          <option selected>Open this select menu</option>
+          <option value="1">Allumé</option>
+          <option value="2">Eteindre</option>
+        </select>
+      </div>
+      <button
+        class="btn btn-md btn-dark mt-3"
+        type="submit"
+        (click)="opensweetalert()"
+      >
+        Enregistrer
+      </button>
+    </form>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="../../../assets/img/card1.png" />
+    </div>
+    <div class="flip-card-back">
+      <img src="../../../assets/img/paint1.png" />
+      <h3>Here is ur painting</h3>
+      <h1>$500</h1>
+    </div>
+  </div>
+</div>
